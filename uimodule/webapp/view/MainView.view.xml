@@ -1,0 +1,27 @@
+<mvc:View controllerName="com.personal.portfolio.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt">
+    <Page id="MainView" class="sapUiBody">
+    <content>
+    <tnt:ToolHeader>
+		<Button  text="HOME" press="onHomePress">
+			
+		</Button>
+		<Button text="ABOUT ME" press="onpress1"></Button>
+        <Button text="SKILLS" press="onpress2"></Button>
+        <Button text="RESUME" press="onpress3"></Button>
+        <Button text="CONTACT" press="onpress4"></Button>
+		
+		
+	</tnt:ToolHeader>
+	
+        <FlexBox
+				height="600px"
+				alignItems="Center"
+				justifyContent="Center">
+        <Text class="name" text="I'm D.Rushyanth.....Front End Developer" />
+        </FlexBox>
+        </content>
+    </Page>
+</mvc:View>

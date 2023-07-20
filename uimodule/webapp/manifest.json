@@ -1,0 +1,158 @@
+{
+  "_version": "1.42.0",
+  "sap.app": {
+    "id": "com.personal.portfolio",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap-ux/fiori-freestyle-writer:basic",
+      "version": "0.14.9"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.102.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.personal.portfolio.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "com.personal.portfolio.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "MainView",
+          "pattern": ":?query:",
+          "target": [
+            "TargetMainView"
+          ]
+        },
+        {
+          "name": "Aboutme",
+          "pattern": "RouteAboutme",
+          "target": [
+            "TargetAboutme"
+          ]
+        },
+        {
+          "name": "Skills",
+          "pattern": "RouteSkills",
+          "target": [
+            "TargetSkills"
+          ]
+        },
+        {
+          "name": "Resume",
+          "pattern": "RouteResume",
+          "target": [
+            "TargetResume"
+          ]
+        },
+        {
+          "name": "Portfolio",
+          "pattern": "RoutePortfolio",
+          "target": [
+            "TargetPortfolio"
+          ]
+        },
+        {
+          "name": "Contact",
+          "pattern": "RouteContact",
+          "target": [
+            "TargetContact"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetMainView": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MainView",
+          "viewName": "MainView"
+        },
+        "TargetAboutme": {
+          "viewType": "XML",
+          "viewId": "Aboutme",
+          "viewName": "Aboutme"
+        },
+        "TargetSkills": {
+          "viewType": "XML",
+          "viewId": "Skills",
+          "viewName": "Skills"
+        },
+        "TargetResume": {
+          "viewType": "XML",
+          "viewId": "Resume",
+          "viewName": "Resume"
+        },
+        "TargetPortfolio": {
+          "viewType": "XML",
+          "viewId": "Portfolio",
+          "viewName": "Portfolio"
+        },
+        "TargetContact": {
+          "viewType": "XML",
+          "viewId": "Contact",
+          "viewName": "Contact"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "com.personal.portfolio.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

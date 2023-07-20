@@ -1,0 +1,31 @@
+<mvc:View controllerName="com.personal.portfolio.controller.Skills"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:tnt="sap.tnt">
+    <Page class="sapUiBody" id="Skills">
+        <content>
+            <tnt:ToolHeader>
+                <Button text="HOME" press="onHomePress"></Button>
+                <Button text="ABOUT ME" press="onpress1"></Button>
+                <Button text="SKILLS" press="onpress2"></Button>
+                <Button text="RESUME" press="onpress3"></Button>
+                <Button text="CONTACT" press="onpress4"></Button>
+            </tnt:ToolHeader>
+            <VBox class="sapUiMediumMargin">
+                <Label text="Front End"  class="sapUiLargeMarginTop sapUiLargeMarginBottom" design="Bold"/>
+                <Label text="ReactJS" class="sapUiMediumMarginTop sapUiTinyMarginBottom" design="Bold"/>
+                <ProgressIndicator displayValue="70%" percentValue="70" width="70%"/>
+                <!-- Skill 2 -->
+                <Label text="Open Ui5" class="sapUiMediumMarginTop sapUiTinyMarginBottom" design="Bold"/>
+                <ProgressIndicator displayValue="80%" percentValue="80" width="70%"/>
+                <!-- Skill 3 -->
+                <Label text="HTML" class="sapUiMediumMarginTop sapUiTinyMarginBottom" design="Bold"/>
+                <ProgressIndicator displayValue="70%" percentValue="70" width="70%"/>
+                <Label text="CSS" class="sapUiMediumMarginTop sapUiTinyMarginBottom" design="Bold"/>
+                <ProgressIndicator displayValue="70%" percentValue="70" width="70%"/>
+                <!-- Add more skills as needed -->
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

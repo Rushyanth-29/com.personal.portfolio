@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.personal.portfolio.controller.Resume"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:tnt="sap.tnt">
+    <Page class="sapUiBody" id="Resume" >
+        <content>
+            <tnt:ToolHeader>
+                <Button text="HOME" press="onHomePress"></Button>
+                <Button text="ABOUT ME" press="onpress1"></Button>
+                <Button text="SKILLS" press="onpress2"></Button>
+                <Button text="RESUME" press="onpress3"></Button>
+                <Button text="CONTACT" press="onpress4"></Button>
+            </tnt:ToolHeader>
+            <VBox class="sapUiMediumMargin" justifyContent="Center" alignItems="Center">
+                <Image src="image/Screenshot (58).png" alt="Resume" class="sapUiMediumMarginTop"/>
+                <!-- Add other content related to your resume if needed -->
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

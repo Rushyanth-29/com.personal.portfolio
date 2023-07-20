@@ -1,0 +1,37 @@
+<mvc:View controllerName="com.personal.portfolio.controller.Aboutme"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:tnt="sap.tnt">
+    <Page class="sapUiBody" id="Aboutme">
+        <content>
+            <tnt:ToolHeader>
+                <Button text="HOME" press="onHomePress"></Button>
+                <Button text="ABOUT ME" press="onpress1"></Button>
+                <Button text="SKILLS" press="onpress2"></Button>
+                <Button text="RESUME" press="onpress3"></Button>
+                <Button text="CONTACT" press="onpress4"></Button>
+            </tnt:ToolHeader>
+
+            <!-- Use VBox to display each Text on a new line -->
+            <VBox>
+                <Text></Text>
+                <Text text="About Me" class="name1" />
+                <Text></Text>
+                <Text text="Front End Developer" class="name3"/>
+                <Text class="name4" text="My journey into the world of frontend development has just begun, and I'm eager to embark on this exciting path of continuous learning and growth. I'm open to new challenges and opportunities that will push my boundaries and help me refine my skills." />
+                <Text class="name4" text="During my recent project, I had the incredible opportunity to work with the SAP UI5 framework to build a cutting-edge business application for a multinational corporation. Leveraging the power of SAP UI5, I crafted a visually appealing and highly interactive user interface that facilitated seamless data visualization and manipulation." />
+                <Text></Text>
+                <Text text="Personal Information" class="name3" />
+                <Text text="Name   D.Rushyanth" class="name4" />
+                <Text text="Age   21" class="name4" />
+                <Text text="Email   rushidodda5@gmail.com" class="name4" />
+                <Text text="Contact No  9392308590" class="name4" />
+                <Text ></Text>
+                <Text text="Links" class="name3"></Text>
+                <Link href="https://github.com/Rushyanth-29" text="https://github.com/Rushyanth-29"></Link>
+                <Link href="https://www.linkedin.com/in/rushyanth-dodda-aa3207264/" text="https://www.linkedin.com/in/rushyanth-dodda-aa3207264/"></Link>    
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

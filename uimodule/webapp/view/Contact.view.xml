@@ -1,0 +1,48 @@
+<mvc:View controllerName="com.personal.portfolio.controller.Contact"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:tnt="sap.tnt">
+    <Page class="sapUiBody" id="Contact">
+        <content>
+            <tnt:ToolHeader>
+                <Button text="HOME" press="onHomePress"></Button>
+                <Button text="ABOUT ME" press="onpress1"></Button>
+                <Button text="SKILLS" press="onpress2"></Button>
+                <Button text="RESUME" press="onpress3"></Button>
+                <Button text="CONTACT" press="onpress4"></Button>
+            </tnt:ToolHeader>
+            <VBox class="sapUiLargeMargin">
+                <!-- Name Input Field -->
+                <Input
+                    value="{/name}"
+                    placeholder="Enter your name"
+                    class="sapUiLargeMarginBottom"
+                />
+
+                <!-- Email Input Field -->
+                <Input
+                    value="{/email}"
+                    type="Email"
+                    placeholder="Enter your email"
+                    class="sapUiLargeMarginBottom"
+                />
+
+                <!-- Description TextArea -->
+                <TextArea
+                    value="{/description}"
+                    placeholder="Enter your message"
+                    rows="6"
+                    class="sapUiLargeMarginBottom"
+                />
+
+                <!-- Submit Button -->
+                <Button
+                    text="Submit"
+                    press="onSubmit"
+                    class="sapUiTinyMarginTop sapUiTinyMarginBottom"
+                />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

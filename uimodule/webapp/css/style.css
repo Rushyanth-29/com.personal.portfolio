@@ -1,0 +1,32 @@
+.name{
+    color: blue;
+    font-size:xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.name1{
+    color: yellow;
+    font-size: xx-large
+}
+.name3{
+    color: aqua;
+    font-size: larger;
+}
+.name4{
+    color: white;
+    font-size: medium;
+}
+.sapUiBody {
+    background-color: #000;
+}
+.linkContainer {
+    margin-bottom: 8px;
+  }
+  
+  .linkHeading {
+    font-weight: bold;
+    width: 120px; /* Adjust the width as needed */
+  }
+  
+  .link {
+    color: blue; /* Change the link color as needed */
+  }
